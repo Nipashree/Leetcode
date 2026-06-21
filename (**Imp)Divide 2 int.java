@@ -1,7 +1,7 @@
 class Solution {
     public int divide(int dividend, int divisor) {
         
-        // Overflow case
+        // Overflow 
         if (dividend == Integer.MIN_VALUE && divisor == -1) {
             return Integer.MAX_VALUE;
         }
