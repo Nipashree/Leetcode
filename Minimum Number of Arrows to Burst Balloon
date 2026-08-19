@@ -1,0 +1,14 @@
+class Solution:
+    def findMinArrowShots(self, points):
+        points.sort(key=lambda x: x[1])
+
+        arrows = 0
+        arrow = float('-inf')
+
+        for start, end in points:
+
+            if start > arrow:
+                arrows += 1
+                arrow = end
+
+        return arrows
